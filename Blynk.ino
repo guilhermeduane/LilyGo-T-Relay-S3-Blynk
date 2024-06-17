@@ -2,23 +2,18 @@
 #define BLYNK_TEMPLATE_ID ""
 #define BLYNK_TEMPLATE_NAME ""
 #define BLYNK_AUTH_TOKEN ""
-
+#define DATA_PIN 7   
+#define CLOCK_PIN 5   
+#define LATCH_PIN 6 
+#define BLYNK_GREEN     "#23C48E"
+#define BLYNK_RED       "#D3435C"
 
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
 
-
 char ssid[] = "";
 char pass[] = "";
-
-#define DATA_PIN 7   
-#define CLOCK_PIN 5   
-#define LATCH_PIN 6 
-
-#define BLYNK_GREEN     "#23C48E"
-#define BLYNK_RED       "#D3435C"
-
 
 void sendData(byte data) {
   for (int i = 0; i < 8; i++) {
