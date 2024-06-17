@@ -1,6 +1,3 @@
-# LilyGo-T-Relay-S3-Blynk
-A way to use Blynk App on LilyGo-T-Relay S3 Board
-
 # IDE Board Settings
 Board -> ESP32S3 Dev Module  
 USB CDC On Boot -> Enable  
