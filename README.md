@@ -49,7 +49,9 @@ Upload Speed -> 921600
 | Green LED    | 0b00000010        |
 | Red LED      | 0b00000001        |
 
-Check line 63 for usage example. 
+Check line 63 for usage example.
+# Clean Registers Function
+At line 33 we have a function called clearRegisters. It was implemented because the board turns off and on with register values ​​that are different from what they were when turned off. I believe it is some electronic noise on the board or some design error.  If you need to maintain the last state of the relays when the board turns off, consider saving the states in EEPROM.
 # Blynk Settings
 These lines need to be filled with Blynk Project API info and WiFi SSID & Password:
 ```C++
@@ -60,5 +62,3 @@ These lines need to be filled with Blynk Project API info and WiFi SSID & Passwo
   char ssid[] = "";
   char pass[] = "";
   
-# Clean Registers Function
-At line 33 we have a function called clearRegisters. It was implemented because the board turns off and on with register values ​​that are different from what they were when turned off. I believe it is some electronic noise on the board or some design error.  If you need to maintain the last state of the relays when the board turns off, consider saving the states in EEPROM.
